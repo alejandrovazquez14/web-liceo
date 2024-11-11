@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Semánticas de maquetación en HTML</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>formacion y desarrollo</h1>
+        <button onclick="toggleTheme()">Modo oscuro</button>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html" onclick="highlightLink(this)">Introduccion</a>
+            <br>
+            <a href="formacionydesarrollo.html">formacion y desarrollo</a>
+            <br>
+            <a href="influenciasocialytomadecisiones.html">influencia social y toma decisiones</a>
+            <br>
+            <a href="comunicacion_y_responsabilidad.html">comunicacion y responsabilidad</a>
+        </nav>
+        <div class="contenedor">
+        <section>
+            <h2>El Rol de los Padres y Cuidadores en la Formación de Valores</h2>
+            <button onclick="toggleContent('content1')">Mostrar/Ocultar Información</button>
+            <div id="content1" style="display: none;">
+                <p class="grande">Desde una edad temprana, los padres y cuidadores establecen la base de valores y normas que guiarán el comportamiento de los jóvenes. Las actitudes de los adultos hacia temas como la honestidad, la responsabilidad, y la ética laboral moldean las creencias y comportamientos de los niños y adolescentes. Los valores transmitidos en el hogar a menudo son los más difíciles de cambiar, ya que estos se integran en el sistema de creencias de los jóvenes a través de la observación y la repetición.
+
+                    Además, los padres influyen en el autoconcepto y la autoestima de sus hijos. Los comentarios, la aprobación o desaprobación, y el apoyo emocional juegan un papel importante en la confianza que los jóvenes desarrollan en sus capacidades.</p>
+            </div>
+        </section>
+        <section>
+            <h2>La Importancia de los Maestros y Mentores en el Desarrollo Intelectual</h2>
+            <button onclick="toggleContent('content2')">Mostrar/Ocultar Información</button>
+            <div id="content2" style="display: none;">
+                <p class="grande">Los maestros no solo imparten conocimientos, sino que también sirven como modelos de conducta y fuentes de inspiración. La manera en que un profesor se comunica, su entusiasmo por enseñar, y su capacidad para motivar afectan profundamente el interés de los jóvenes por aprender. Muchos jóvenes encuentran en sus maestros a figuras de apoyo que los guían en la construcción de metas académicas y profesionales.
+
+                    Los mentores, tanto en contextos educativos como extracurriculares, también influyen en la vida de los jóvenes, ya que brindan orientación, inspiración, y, a veces, oportunidades para explorar nuevos intereses y talentos.</p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <h2><a href="https://vgarcen.github.io/RepositorioImagenes/">Repositorio Web</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

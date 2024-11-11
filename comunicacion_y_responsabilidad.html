@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Semánticas de maquetación en HTML</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>comunicacion y responsabilidad</h1>
+        <button onclick="toggleTheme()">Modo oscuro</button>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html" onclick="highlightLink(this)">Introduccion</a>
+            <br>
+            <a href="formacionydesarrollo.html">formacion y desarrollo</a>
+            <br>
+            <a href="influenciasocialytomadecisiones.html">influencia social y toma decisiones</a>
+            <br>
+            <a href="comunicacion_y_responsabilidad.html">comunicacion y responsabilidad</a>
+        </nav>
+        <div class="contenedor">
+        <section>
+            <h2>La Importancia de la Comunicación Abierta entre Adultos y Jóvenes</h2>
+            <button onclick="toggleContent('content1')">Mostrar/Ocultar Información</button>
+            <div id="content1" style="display: none;">
+                <p class="grande">Una comunicación abierta y honesta entre adultos y jóvenes permite que estos últimos se sientan escuchados y comprendidos. Los adultos que adoptan una actitud de escucha activa y empatía tienen más probabilidades de ganar la confianza de los jóvenes, lo que permite un espacio donde los adolescentes pueden expresar sus preocupaciones y dudas sin temor a ser juzgados. Esta comunicación abierta fomenta un ambiente de respeto mutuo y crea una conexión sólida que ayuda a los jóvenes a enfrentar desafíos y tomar decisiones de manera informada.</p>
+            </div>
+        </section>
+        <section>
+            <h2>La Responsabilidad de los Adultos en la Construcción de una Sociedad Más Inclusiva y Respetuosa</h2>
+            <button onclick="toggleContent('content2')">Mostrar/Ocultar Información</button>
+            <div id="content2" style="display: none;">
+                <p class="grande">Los adultos también influyen en la percepción que los jóvenes tienen sobre temas de inclusión, diversidad y respeto. Las actitudes de los adultos hacia otros grupos sociales y culturales afectan la forma en que los jóvenes ven y tratan a las personas que son diferentes de ellos. La manera en que los adultos hablan y actúan sobre temas como la equidad de género, el racismo, y la justicia social tiene un impacto significativo en la manera en que los jóvenes se relacionan con el mundo.</p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <h2><a href="https://vgarcen.github.io/RepositorioImagenes/">Repositorio Web</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

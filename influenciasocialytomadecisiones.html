@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Semánticas de maquetación en HTML</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>influencia social y toma decisiones</h1>
+        <button onclick="toggleTheme()">Modo oscuro</button>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html" onclick="highlightLink(this)">Introduccion</a>
+            <br>
+            <a href="formacionydesarrollo.html">formacion y desarrollo</a>
+            <br>
+            <a href="influenciasocialytomadecisiones.html">influencia social y toma decisiones</a>
+            <br>
+            <a href="comunicacion_y_responsabilidad.html">comunicacion y responsabilidad</a>
+        </nav>
+        <div class="contenedor">
+        <section>
+            <h2>La Influencia de las Figuras Públicas y los Medios de Comunicación</h2>
+            <button onclick="toggleContent('content1')">Mostrar/Ocultar Información</button>
+            <div id="content1" style="display: none;">
+                <p class="grande">Con el auge de la tecnología y las redes sociales, los jóvenes están constantemente expuestos a celebridades, influencers y figuras públicas que promueven ciertos estilos de vida, valores y comportamientos. Este tipo de influencia tiene un impacto tanto positivo como negativo. Por un lado, los jóvenes pueden encontrar inspiración en figuras públicas que promueven la educación, el bienestar físico y mental, o el activismo social. Sin embargo, también existe el riesgo de que los adolescentes idealicen comportamientos perjudiciales o desarrollen una autoimagen negativa al compararse con los estándares irreales promovidos en las redes sociales.</p>
+            </div>
+        </section>
+        <section>
+            <h2>El Efecto de la Influencia Social en la Toma de Decisiones</h2>
+            <button onclick="toggleContent('content2')">Mostrar/Ocultar Información</button>
+            <div id="content2" style="display: none;">
+                <p class="grande">Los jóvenes tienden a ser muy susceptibles a la presión social, y los adultos tienen un papel clave en ayudarles a desarrollar habilidades de pensamiento crítico y autonomía. Los adultos pueden ayudar a los jóvenes a entender que no siempre es necesario seguir la opinión de la mayoría y que tomar decisiones propias es una parte importante de la madurez. La influencia de un adulto en esta área puede determinar si un joven se siente empoderado para tomar decisiones independientes o si depende en gran medida de la validación externa.</p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <h2><a href="https://vgarcen.github.io/RepositorioImagenes/">Repositorio Web</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

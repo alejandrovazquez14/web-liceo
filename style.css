@@ -1,0 +1,132 @@
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    width: 100%;
+    gap: 30px; /* Espacio entre el menú y la sección */
+    margin-top: 20px; /* Espacio debajo del header */
+    flex: 1;
+}
+
+/* Estilos para la navegación */
+nav {
+    width: 20%;
+    margin-top: 20px; /* Espacio arriba del menú */
+}
+
+nav a {
+    background: linear-gradient(45deg, #dde932, #040007);
+    color: #fff; /* Color de texto en los enlaces */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Enlaces en bloque */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+nav a:hover {
+    background: linear-gradient(45deg, #040007, #dde932);
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilos para la sección */
+section {
+    padding: 5px;
+    width: 75%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+section:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+    transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: linear-gradient(45deg, #f72525, #000000);
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* Deja espacio para el menú */
+    padding: 20px; /* Añadir espacio interno */
+    text-align: center; /* Centrar texto */
+}
+
+header:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+    transform: scale(1.01); /* Efecto de aumento al pasar el ratón */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el aside */
+aside {
+    float: right; /* Alineación a la derecha */
+    width: 30%; /* Ancho del aside */
+    padding: 10px; /* Espacio interno */
+    margin: 5px; /* Espacio externo */
+    font-style: italic; /* Cursiva */
+    color: #8543ee; /* Color del texto */
+    box-shadow: inset 5px 0 5px -5px #ff0000; /* Sombra interna */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: linear-gradient(90deg, #f72525, #000000);
+    color: #fff;
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espacio interno */
+    margin-top: 20px; /* Espacio arriba */
+    clear: both; /* Evita superposición con elementos flotantes */
+    width: 100%;
+}
+
+footer a {
+    color: #fff; /* Color del enlace */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+footer a:hover {
+    color: #d4a5e8; /* Color al pasar el ratón */
+}
+.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+nav a.highlight {
+    color: rgb(0, 217, 255);
+    font-weight: bold;
+}
+
+p.grande {
+    font-size: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    display: block; /* Esto es el valor por defecto, pero lo incluimos para referencia */
+    margin-bottom: 50px; /* Ajusta el valor para más o menos espacio entre secciones */
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajusta el espacio entre las secciones */
+}
+/* Estilos por defecto (modo claro) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
